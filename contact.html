@@ -10,7 +10,6 @@
     </head>
     <body>
         <header>
-            <noscript>The Theme Picker feature will not work without JavaScript :&lpar;</noscript>
             <h1>Site Navigation</h1>
             <nav>
                 <ul>
@@ -61,10 +60,11 @@
 
                     <div class="field">
                         <label for="message">Enter Your Message: </label>
-                        <textarea id="message" name="message" rows="5" cols="33" minlength="1" maxlength="1000" title="message field">...Hello!</textarea>
+                        <textarea id="message" name="message" rows="5" cols="33" minlength="2" maxlength="1000" required title="message field">...Hello!</textarea>
+                        <span></span>
                         <output id="message-output" aria-live="polite"></output>
                     </div>
-
+                    <input type="hidden" name="form-errors" id="form-errors-json" value="">
                     <button type="submit" id="submit">send</button>
                 </fieldset>
             </form>

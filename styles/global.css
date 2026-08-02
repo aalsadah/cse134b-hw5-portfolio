@@ -1,5 +1,22 @@
-h1,h2,h3,h4{
-
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightgrey;
+}
+h1,h2,h3,h4, h5, h6{
     border: 1px solid;
-    
-    }
+}
+input:user-valid{
+    border: 2px solid green;
+}
+input:user-valid+span::before{
+    content:"✓";
+    color: green;
+}
+input:user-invalid {
+  border: 2px solid red;
+}
+
+input:user-invalid + span::before {
+  content: "✖";
+  color: red;
+}

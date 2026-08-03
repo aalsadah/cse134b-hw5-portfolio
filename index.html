@@ -6,7 +6,7 @@
         <title>Ali AlSadah Portfolio</title>
         <link rel="icon" href="/assets/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="./styles/global.css">
-        <script src="./js/script.js"></script>
+        <script src="./js/webComponent.js" type="module"></script>
     </head>
     <body>    
         <header>
@@ -47,6 +47,15 @@
                     style="width:100%;max-width:660px;overflow:hidden;background:transparent;"
                     src="https://embed.music.apple.com/us/album/twilight/1596227761">
                 </iframe>
+            </section>
+            <section>
+                <h5>press for more dumb jokes <noscript>(No jokes if you dont have JS on!)</noscript></h5>
+                <dad-joke>
+                </dad-joke>
+                <template id="joke-template">
+                    <button type="button">xD</button>
+                    <div class="display-joke"></div>
+                </template>
             </section>
         </main>
 

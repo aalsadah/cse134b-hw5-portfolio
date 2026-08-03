@@ -1,1 +1,3 @@
 Website Netlify Link: [alis-portfolio-ucsd.netlify.app](https://ali-portfolio-ucsd.netlify.app/)
+
+For the Progressive Enhancement with JavaScript I went with the Form Validation and Error Reporting Feature. My baseline feature concerning the form was to validate the user input using native HTML and CSS controls which checked for required feilds left empty, and min/max inputs. The CSS invalid/valid-user psuedoclass modified the content of the input feilds and would add either a checkmark or an x. The JS script adds the feature which includes written outputs next to the feilds detailing the exact errors for why the user inputs are incorrect, and also allows the Narrator tool API to announce those error messages which improves the accessibility of the feature.
